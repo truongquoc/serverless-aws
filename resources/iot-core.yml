@@ -2,7 +2,7 @@ Resources:
   IoTCoreRuleSendingToKinesis:
     Type: AWS::IoT::TopicRule
     Properties:
-      RuleName: ${self:custom.serviceName}_${self:custom.stage}_send_to_kinesis_rule
+      RuleName: airmarket_v1
       TopicRulePayload:
         Actions:
           - Firehose:
@@ -10,7 +10,7 @@ Resources:
               RoleArn: !GetAtt KinesisRuleRole.Arn
         RuleDisabled: false
         Sql: !Sub
-          SELECT * FROM 'iot/topic'
+          SELECT * FROM 'iot/airmarket'
 
   KinesisRuleRole:
     Type: AWS::IAM::Role

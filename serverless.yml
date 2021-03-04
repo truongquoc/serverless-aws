@@ -9,7 +9,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
-  region: ap-northeast-1
+  region: us-west-2
 
 iamRoleStatements:
   - Effect: "Allow"

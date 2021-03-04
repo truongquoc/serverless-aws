@@ -1,0 +1,6 @@
+{
+    "dbhost": "airmarket-sql.cgttjqufqb7j.us-west-2.rds.amazonaws.com",
+    "dbUsername": "admin",
+    "dbPassword": "admin123",
+    "database": "Airmarket"
+}
